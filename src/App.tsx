@@ -3,7 +3,7 @@ import Mode from "./components/Mode";
 import Play from "./components/Play";
 
 function App() {
-  const [game, setGame] = useState<"pick" | "play">("play");
+  const [game, setGame] = useState<"pick" | "play">("pick");
 
   const handleMode = (mode: "create" | "join", code?: string) => {
     setGame("play");
